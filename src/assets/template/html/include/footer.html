@@ -1,0 +1,43 @@
+
+
+    <!-- @if NODE_ENV='development' -->
+    <script src="/assets/template/vendor/jquery-3.2.1.min.js"></script>
+    <script src="assets/template/vendor/slick/slick.js"></script>
+    <script src="assets/template/vendor/magnific-popup/magnific-popup.js"></script>
+    <script src="/vendor/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script src="assets/template/js/scripts.js"></script>
+    <!-- @endif -->
+
+
+    <!-- @if NODE_ENV='production' -->
+    <script src="assets/template/js/scripts.js"></script>
+    <!-- @endif -->
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script>
+        ymaps.ready(init);
+        function init() {
+            createMap({center:[59.957055, 30.341358], zoom:16, controls:[], scroll: false}, '');
+        }
+
+        function createMap(state, caption) {
+            // Если карта еще не была создана, то создадим ее и добавим метку с адресом.
+            //alert(state.toSource());
+
+                map = new ymaps.Map('map', state);
+                placemark = new ymaps.Placemark(
+                    map.getCenter(), {
+                        iconCaption: caption,
+                        balloonContent: caption
+                    }, {
+                        preset: 'islands#redDotIconWithCaption'
+                    });
+                map.geoObjects.add(placemark);
+                // Если карта есть, то выставляем новый центр карты и меняем данные и позицию метки в соответствии с найденным адресом.
+
+        }
+    </script>
+
+</body>
+</html>
