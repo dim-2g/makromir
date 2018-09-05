@@ -1,0 +1,16 @@
+$red: #bd1706;
+$border-color: #dbdbdb;
+$pink: #fb1792;
+$purple: #a05bf7;
+$orange: #fc4803;
+$anim: all 0.2s ease 0s;
+$block-shadow-down: 0 12px 6px -8px #cacaca;
+$anim5: all 0.5s;
+$cubic: all 0.5s cubic-bezier(0.3, 0, 0.2, 1);
+
+$bp-larger-than-mobile    : "min-width: 400px" !default;
+$bp-larger-than-phablet   : "min-width: 575px" !default;
+$bp-larger-than-tablet    : "min-width: 767px" !default;
+$bp-larger-than-desktop   : "min-width: 991px" !default;
+$bp-larger-than-desktophd : "min-width: 1199px" !default;
+

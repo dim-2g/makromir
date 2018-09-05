@@ -24,21 +24,21 @@
     </div>
 </div-->
 
-<div class="header">
+<div class="header header-fixed">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="header__row">
                     <div class="header__logo">
                         <a class="header__logo-link" href="#">
-                            <img class="logo--desktop" src="/assets/template/img/logo.jpg" alt="">
+                            <img class="logo--desktop" src="/assets/template/img/logo.jpg?v=1" alt="">
                             <img class="logo--mobile" src="/assets/template/img/logo-mob.jpg" alt="">
                         </a>
                     </div>
                     <div class="header__menu">
                         <ul>
                             <li><a href="#" data-goto=".about">О компании</a></li>
-                            <li><a href="#" data-goto=".speaker">Наш сервис</a></li>
+                            <li><a href="#" data-goto=".structure">Наш сервис</a></li>
                             <li><a href="#" data-goto=".benefit">Ваши выгоды</a></li>
                             <li><a href="#" data-goto=".location">Контакты</a></li>
                         </ul>
@@ -52,7 +52,7 @@
                     <ul>
                         <li><a href="#" data-goto=".location">Контакты</a></li>
                         <li><a href="#" data-goto=".benefit">Ваши выгоды</a></li>
-                        <li><a href="#" data-goto=".speaker">Наш сервис</a></li>
+                        <li><a href="#" data-goto=".structure">Наш сервис</a></li>
                         <li><a href="#" data-goto=".about">О компании</a></li>
                     </ul>
                 </div>
@@ -81,11 +81,11 @@
                 </div>
             </div>
             <div class="commission__item commission__item--2">
-                <a href="#" class="commission__video">
+                <a data-fancybox="" href="https://www.youtube.com/watch?v=duy7WXzTl-Q" class="commission__video">
                     <img src="/assets/template/img/tmp/video-1.jpg" alt="">
                 </a>
 
-                <a href="#" class="commission__link">Узнать больше о компании</a>
+                <a href="#" class="commission__link" data-goto=".about">Узнать больше о компании</a>
 
             </div>
         </div>
@@ -114,7 +114,7 @@
     </div>
 </div>
 
-<div class="slidtab__wrap">
+<div class="slidtab__wrap structure">
     <div class="container">
         <div class="slidtab__caption">
             Из чего состоит сервис Макромир Недвижимость?
@@ -150,11 +150,11 @@
                 <div class="slidtab__list-content">
                     <div class="slidtab-cont">
                         <div class="slidtab-cont__hide-title">
-                            Офис для вашей успешной работы
+                            Офис для успешной работы
                         </div>
                         <div class="slidtab-cont__left">
                             <div class="slidtab-cont__title">
-                                Офис для вашей успешной работы
+                                Офис для успешной работы
                             </div>
                             <div class="slidtab-cont__desc">
                                 <p>Проводите встречи на высшем уровне. Переговорные комнаты, услуги офис-менеджера, личного секретаря, поверенного, чай, кофе и сладости – бесплатно в любом из наших офисов!</p>
@@ -377,7 +377,7 @@
                     Узнайте больше на личной встрече
                 </div>
                 <div class="benefit__btn">
-                    <a class="btn" href="#">Записаться на встречу</a>
+                    <a class="btn-o" href="#">Записаться на встречу</a>
                 </div>
             </div>
         </div>
@@ -483,7 +483,7 @@
                         </div>
 
                         <div class="xform__button">
-                            <button class="plan__btn btn">Записаться на встречу</button>
+                            <button class="plan__btn btn-o">Записаться на встречу</button>
                         </div>
                     </form>
                 </div>
@@ -506,12 +506,34 @@
         </div>
         <div class="agents-video__list">
             <div class="agents-video__main">
-                <img src="/assets/template/img/tmp/video-2.jpg" alt="">
+                <div class="agents-video__main-item">
+                    <iframe width="100%" height="460" src="https://www.youtube.com/embed/Ks6eVRmeWH4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
             </div>
             <div class="agents-video__more">
-                <img src="/assets/template/img/tmp/video-3.jpg" alt="">
-                <img src="/assets/template/img/tmp/video-4.jpg" alt="">
-                <img src="/assets/template/img/tmp/video-5.jpg" alt="">
+                <div class="agents-video__more-item">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GuTRO6oQzRk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="agents-video__more-item">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/39YmP4z_b0A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="agents-video__more-item">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SnyUCnFcaW4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="agents-video__list--mobile video-slider">
+            <div class="agents-video__item">
+                <iframe width="100%" height="164" src="https://www.youtube.com/embed/Ks6eVRmeWH4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="agents-video__item">
+                <iframe width="100%" height="164" src="https://www.youtube.com/embed/GuTRO6oQzRk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="agents-video__item">
+                <iframe width="100%" height="164" src="https://www.youtube.com/embed/39YmP4z_b0A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="agents-video__item">
+                <iframe width="100%" height="164" src="https://www.youtube.com/embed/SnyUCnFcaW4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -520,9 +542,9 @@
 <div class="history">
     <div class="container">
         <div class="history__caption">
-            Истории успеха Ваших коллег
+            Истории успеха<br class="only-mobile"/> Ваших коллег
         </div>
-        <div class="history__list">
+        <div class="history__list history-slider">
             <div class="history__item">
                 <div class="history__image-box">
                     <div class="history__image">
@@ -595,7 +617,7 @@
 
 <div class="photo">
     <div class="container">
-        <div class="photo__list">
+        <div class="photo__list photo-slider">
             <div class="photo__item">
                 <div class="photo__image">
                     <a href="/assets/template/img/photo-1.jpg" data-fancybox="gallery"><img src="/assets/template/img/photo-1.jpg" alt=""></a>
@@ -723,7 +745,7 @@
                         </div>
                     </div>
                     <div class="footer__social footer__item">
-                        <a class="footer__social--vk" href="#"></a>
+                        <a class="footer__social--vk" href="#"><i class="fa fa-vk"></i></a>
                         <a class="footer__social--f" href="#"></a>
                     </div>
                     <div class="footer__menu footer__item">
@@ -755,8 +777,8 @@
 
 
 
-    <!--
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&load=Map" type="text/javascript"></script>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script>
         ymaps.ready(init);
         function init() {
@@ -781,6 +803,6 @@
 
         }
     </script>
--->
+
 </body>
 </html>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- @if NODE_ENV='development' -->
+    <link rel="stylesheet" href="/assets/template/vendor/anumate.css">
+
+    <!-- @endif -->
+
+    <!-- @if NODE_ENV='production' -->
+    <link rel="stylesheet" href="assets/template/css/main.min.css">
+    <!-- @endif -->
+
+    <style>
+        .about{
+            background-color: #f1f1f1;
+
+        &__list{
+             display: flex;
+             flex-direction: column;
+             padding: 18px 0 10px 0;
+        @media($bp-larger-than-desktop) {
+            flex-direction: row;
+            padding: 45px 0;
+        }
+        }
+        &__item{
+             width: 100%;
+        &--1{
+             align-self: center;
+             position: relative;
+             z-index: 10;
+             order: 1;
+             margin-bottom: 20px;
+        @media($bp-larger-than-desktop) {
+            order: 0;
+            margin-bottom: 0;
+        }
+        img{
+            width: 100%;
+            max-width: 520px;
+        }
+        }
+        &--2{
+             background-color: #fff;
+             padding: 24px 22px 20px 20px;
+             position: relative;
+             margin-bottom: 10px;
+        @media($bp-larger-than-desktop) {
+            padding: 52px 50px 44px 20px;
+            margin-bottom: 0;
+        }
+        &:before{
+             content: "";
+             display: inline-block;
+             position: absolute;
+             left: 0;
+             top: 0;
+             right: 0;
+             bottom: 0;
+             background-color: #fff;
+             z-index: 0;
+        @media($bp-larger-than-desktop) {
+            left: -200px;
+        }
+        }
+        div{
+            z-index: 10;
+            position: relative;
+        }
+        }
+        }
+        &__caption{
+             font-weight: 600;
+             font-size: 26px;
+             letter-spacing: 1px;
+             margin-bottom: 20px;
+        @media($bp-larger-than-tablet) {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        }
+        &__text{
+        p{
+            margin-bottom: 22px;
+            letter-spacing: 0.24px;
+            line-height: 140%;
+            font-size: 12px;
+        @media($bp-larger-than-tablet) {
+            font-size: 14px;
+        }
+        }
+        }
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="about">
+    <div class="container">
+        <div class="about__list">
+            <div class="about__item about__item--1">
+                <img src="/assets/template/img/about.jpg" alt="">
+            </div>
+            <div class="about__item about__item--2">
+                <div class="about__caption">
+                    О компании
+                </div>
+                <div class="about__text fadeInUp animated">
+                    <p>Макромир - это агентство для агентов!</p>
+                    <p>В «Макромире» агент получает лучший сервис для успешной работы
+                        на рынке недвижимости. Мы предоставляем нашим партнёрам офис
+                        для работы и проведения сделок, поддержку юристов, ипотечный брокеридж, CRM систему для работы с клиентами и публикации объявлений, онлайн учебный центр с библиотекой знаний, а также проводим различные обучающие семинары и тренинги по всем направлениям.</p>
+                    <p>С нами Ваша услуга станет лучше, а доход больше!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
+
